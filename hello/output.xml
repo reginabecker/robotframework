@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20200929 21:38:50.860" rpa="false">
+<suite id="s1" name="Test" source="C:\qafullstack\Robot Beginner\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas">
+<kw name="Welcome" library="app">
+<arguments>
+<arg>Fernando</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200929 21:38:50.930" level="INFO">${result} = Olá Fernando, Bem vindo ao Curso Básico de Robot Framework!</msg>
+<status status="PASS" starttime="20200929 21:38:50.929" endtime="20200929 21:38:50.930"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20200929 21:38:50.931" endtime="20200929 21:38:50.932"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>Olá Fernando, Bem vindo ao Curso Básico de Robot Framework!</arg>
+</arguments>
+<status status="PASS" starttime="20200929 21:38:50.934" endtime="20200929 21:38:50.934"></status>
+</kw>
+<status status="PASS" starttime="20200929 21:38:50.928" endtime="20200929 21:38:50.935" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200929 21:38:50.865" endtime="20200929 21:38:50.939"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

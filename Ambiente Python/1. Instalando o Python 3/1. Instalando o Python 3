@@ -1,0 +1,138 @@
+C:\qafullstack\Robot Beginner\Ambiente Python\1. Instalando o Python 3
+
+python.org
+
+Menu Downloads
+Download Python 3.8.5
+
+Executar
+Marcar Add Python 3.8 to PATH
+Customize Installation
+tudo marcado proxima tela
+Marcar Install for all users
+Mudar o caminho de instalação para:
+C:\Python38-32
+
+Prompt de comando:
+python --version
+pip --version
+
+2. VSCode com extensão do Robot
+NO VS Code 
+Aba Extensões
+Python
+Robot Framework
+Material icon theme
+hyper term
+
+3 - Console Emulator
+
+cmder.net
+Download Full
+Criar uma pasta no C:\Tools
+Colar la dentro
+Clicar no Icone botão direito
+Criar Atalho
+No Atalho
+Renomear Console Emulator
+Aberto o cmder
+Clicar no cabeçalho no ícone para mudar as configurações
+Settings
+Fonts = 18
+Ele já vem com o git instalado
+git --version
+ls (listar pastas no linux)
+
+Copiar todo este caminho
+C:\Tools\cmder\vendor\git-for-windows\bin
+Botão direito no Meu computador
+Propriedades
+Configurações Avançadas do sistema
+Variáveis de Ambiente
+Variáveis do sistema -> path
+Editar
+Novo: C:\Tools\cmder\vendor\git-for-windows\bin
+
+Copiar o endereço
+C:\Tools\cmder\vendor\git-for-windows\usr\bin
+Colocar no Path das variaveis de ambiente
+para ter acesso ao git
+no console digitar
+git
+Exibe todos os comandos
+
+
+4 - Robotizando elementos da Web
+
+robotframework.org
+
+No Console emuletor
+Acessar a pasta
+cd C:\qafullstack\Robot Beginner
+
+No Console Emulator
+python --version
+pip --version
+
+Instalar o RobotFramework
+
+pip install robotframework
+
+Ele vai instalar no sistema e não na pasta do projeto
+
+robot --version
+
+No Console depois de criar o Código no Visual Studio
+ python app.py
+ 
+Executar um script Robot
+
+robot test.robot 
+
+5 - Instalar o robotframework
+C:\qafullstack\Robot Beginner
+
+pip install robotframework-seleniumlibrary
+
+Acessar a pasta
+C:\qafullstack\Robot Beginner\web
+
+Executar 
+
+robot title.robot
+
+---------------------------------------------------------------------------------------------
+--------------------------------- Organizando Outputs ---------------------------------------
+---------------------------------------------------------------------------------------------
+No cmder digitar 
+
+robot -d ./log title.robot
+
+robot -d ./log checkbox.robot
+
+para executar um cenário específico
+
+robot -d ./log -i ironman checkbox.robot
+
+--Após Criar os ganchos e setup
+
+robot -d ./log tests\
+
+--Para executar só o radio
+
+robot -d ./log tests\radio.robot
+
+--executar só uma tag de cenário
+robot -d ./log -i login_error tests\
+
+
+
+
+
+
+
+
+
+
+
+
