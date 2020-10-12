@@ -3,6 +3,6 @@ git add README.md
 git status
 git add .
 git commit -m "first commit"
-git branch -M main
+git branch -M master
 git remote add origin https://github.com/reginabecker/robotframework.git
-git push -u origin main
+git push -u origin master
